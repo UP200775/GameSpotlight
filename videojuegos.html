@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<HTML lang="en">
+
+<head>
+    <meta charset="UTF=-8">
+    <META name="viewport" content="width=device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Videojuegos</title> <!--este es un comentaro : sirve para popner nombre a la pagina-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="Css/games.css">
+    <link rel="stylesheet" href="Css/header.css">
+
+</head>
+<body >
+    <nav class="menu">
+        <a href="Home.html">
+            <img src="Imagenes/logo.png" align="left"width="100px" height="100">
+        </a>
+            <a href="articulos.html">Artículos</a>
+            <a href="videojuegos.html">Videojuegos</a>
+            <a href="Staff.html">Staff</a>
+            <a href="Comunicate.html">Comunícate</a>
+            <a href="formulario.html"><img class="user-img2" src="Imagenes/Staff/Yael2.jpeg" width="50px" height="50"/> </a>
+    </nav>
+    <main class="gotys">
+        <div class="tarjeta">
+            <img src="Imagenes/Games/botw.jpg" class="portadas" alt="Imagen de Juego">
+            <h2>The Legend of Zelda: Breath of the Wild</h2>
+            <p>Fecha de Salida: 03/03/2017</p>
+            <button class="vm" onclick="verMas(1)">Ver más</button>
+        </div>
+        <div class="tarjeta">
+            <img src="Imagenes/Games/gow.jpg" class="portadas" alt="Imagen de Juego">
+            <h2>God of War</h2>
+            <p>Fecha de Salida: 20/04/2018</p>
+            <button class="vm" onclick="verMas(2)">Ver más</button>
+        </div>
+        <div class="tarjeta">
+            <img src="Imagenes/Games/sekiro.jpg" class="portadas" alt="Imagen de Juego">
+            <h2>Sekiro: Shadows Die Twice</h2>
+            <p>Fecha de Salida: 22/03/2019</p>
+            <button class="vm" onclick="verMas(3)">Ver más</button>
+        </div>
+        <div class="tarjeta">
+            <img src="Imagenes/Games/eldenring.jpg" class="portadas" alt="Imagen de Juego">
+            <h2>Elden Ring</h2>
+            <p>Fecha de Salida: 25/02/2022</p>
+            <button class="vm" onclick="verMas(4)">Ver más</button>
+        </div>
+    </main>
+    <script>
+        function verMas(trabajadorId) {
+          switch (trabajadorId) {
+            case 1:
+              window.location.href = "botw.html";
+              break;
+            case 2:
+              window.location.href = "gow.html";
+              break;
+            case 3:
+              window.location.href = "sekiro.html";
+              break;
+            case 4:
+              window.location.href = "eldenring.html";
+              break;
+          }
+        }
+      </script>
+</body>
+<footer>
+  <link rel="stylesheet" href="Css/footer.css">
+  <div class="footer-container">
+    <div class="logo">
+      <img src="Imagenes/logo.png" alt="Logo de la empresa">
+    </div>
+    <div>
+      2023 © GameSpotlight
+    </div>
+    <div class="redes-sociales">
+      <a href="enlace-a-red-social"><img src="Imagenes/facebook.png"></a>
+      <a href="enlace-a-red-social"><img src="Imagenes/instagram.png"></a>
+      <a href="enlace-a-red-social"><img src="Imagenes/twitter.png"></a>
+    </div>
+  </div>
+</footer>
+</HTML>

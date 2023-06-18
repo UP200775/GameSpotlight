@@ -1,0 +1,335 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ :root {
+   --negro: #000000;
+   --verde: #09ff00;
+ }
+
+ body {
+   font-size: 20px;
+   font-family: 'Comic Neue', sans-serif;
+
+ }
+
+ p {
+   font-size: 22px;
+ }
+
+
+ .contenido-header {
+   width: 100%;
+   height: 100vh;
+   background-image: url(060.jpg);
+   /* fondo de la pagina y sus caractersticas */
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+
+ }
+
+ .contenido-header .fondo {
+
+   width: 0%;
+   height: 100%;
+   max-width: 100%;
+   background-image: url(UPA.gif);
+   /* poner fondo movible con raton */
+ }
+
+
+ .contenido-header .texto {
+
+   width: calc(100vw - 20px);
+   height: 100vh;
+   font-size: 150px;
+   font-weight: 400;
+   font-family: sans-serif;
+   font-style: italic;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: rgb(59, 51, 51);
+   mix-blend-mode: multiply;
+
+
+ }
+
+
+ /* Estilos del menu */
+
+ .menu {
+   background-color: rgb(51, 46, 46);
+   width: 100%;
+   position: sticky;
+   /* para hacer que no se mueva de arriba */
+   top: 0;
+   /* aqui tambien -> */
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-style: italic;
+   padding: 5px;
+   z-index: 999;
+   text-align: center;
+   justify-content: center;
+   margin-bottom: 100px;
+ }
+
+ /* minuto 34:46 */
+
+ .menu a {
+   display: inline-block;
+   padding: 10px 30px;
+   font-size: 26px;
+   margin: 0 10px;
+   background-color: rgb(52, 46, 46);
+   transition: .5s ease all;
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+ }
+
+ .menu a:hover {
+
+   transform: translateY(18px);
+   background-color: rgb(150, 150, 150);
+ }
+
+ .texto {
+   color: #ffffff;
+   font-size: 25px;
+   text-align: justify;
+
+ }
+
+
+
+
+ .nosotros {
+   margin-bottom: 60px;
+
+ }
+
+ .subtitulo {
+   font-size: 25px;
+   color: rgb(0, 0, 0);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 700;
+   z-index: 2;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+
+ }
+
+ .subtitulo span {
+
+   padding: 0 15px;
+   z-index: 99;
+   position: relative;
+
+
+ }
+
+ .subtitulo::after {
+   content: "";
+   display: inline-block;
+   height: px;
+   width: 100%;
+   background-color: #000000;
+   position: relative;
+   top: - 29px;
+   z-index: 1;
+
+
+ }
+
+
+ .titulito {
+   font-size: 50px;
+   color: rgb(255, 255, 255);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 700;
+   z-index: 2;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+
+ }
+
+ .fondito1 {}
+
+ @keyframes arriba {
+   0% {
+     transform: translateX(0);
+   }
+
+   50% {
+     transform: translateX(50%);
+
+   }
+
+   100% {
+     transform: translateX(100%);
+
+
+   }
+ }
+
+ .reyfly {
+   transform: translate(-50%);
+
+   animation: arriba 10s infinite;
+   animation-delay: 5s;
+   animation-iteration-count: 2;
+
+ }
+
+ body {
+
+
+   background-color: #000000;
+
+ }
+
+ /* minuto 45:27*/
+
+
+ .image{
+text-align: left;
+
+ }
+
+ form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #00fff2;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.btn {
+  background-color: #00fff2;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.card {
+  text-align: center;
+  padding: 20px;
+  border: 5px solid #00fff2;
+  border-radius: 5px;
+}
+.trabajadores {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trabajador {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  border: 5px solid #00fff2;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+/* CSS para videojuegos.html */
+.gotys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.tarjeta {
+  text-align: center;
+  padding: 20px;
+  border: 5px solid cyan;
+  border-radius: 5px;
+  background-color: gold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* CSS para cada juego */
+.juego {
+  width: 1080px;
+  height: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  border: 5px solid #c5fa04ec;
+  border-radius: 5px;
+  background-color: #00fff7;
+}
+
+/* CSS para cada boton */
+.vm {
+  background: #000000;
+  --c: red;
+  color: var(--c);
+  font-size: 16px;
+  border: 0.3em solid var(--c);
+  border-radius: 0.5em;
+  width: 12em;
+  height: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+
+.portadas {
+
+  height: 250px;
+  
+  width: 250px;
+  
+  object-fit: cover;
+  
+  }
+
+
+
+
+
+
+
+
+

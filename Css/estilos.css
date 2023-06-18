@@ -1,0 +1,182 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ :root {
+   --negro: #000000;
+   --verde: #09ff00;
+ }
+
+ body {
+   font-size: 20px;
+   font-family: 'Comic Neue', sans-serif;
+
+ }
+
+ p {
+   font-size: 22px;
+ }
+
+
+ .contenido-header {
+   width: 100%;
+   height: 100vh;
+   background-image: url(060.jpg);
+   /* fondo de la pagina y sus caractersticas */
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+
+ }
+
+ .contenido-header .fondo {
+
+   width: 0%;
+   height: 100%;
+   max-width: 100%;
+   background-image: url(UPA.gif);
+   /* poner fondo movible con raton */
+ }
+
+
+ .contenido-header .texto {
+
+   width: calc(100vw - 20px);
+   height: 100vh;
+   font-size: 150px;
+   font-weight: 400;
+   font-family: sans-serif;
+   font-style: italic;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: rgb(59, 51, 51);
+   mix-blend-mode: multiply;
+
+
+ }
+
+
+ /* Estilos del menu */
+
+ .menu {
+   background-color: rgb(51, 46, 46);
+   width: 100%;
+   position: sticky;
+   /* para hacer que no se mueva de arriba */
+   top: 0;
+   /* aqui tambien -> */
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-style: italic;
+   padding: 5px;
+   z-index: 999;
+   text-align: center;
+   justify-content: center;
+   margin-bottom: 100px;
+ }
+
+ /* minuto 34:46 */
+
+ .menu a {
+   display: inline-block;
+   padding: 10px 30px;
+   font-size: 26px;
+   margin: 0 10px;
+   background-color: rgb(52, 46, 46);
+   transition: .5s ease all;
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+ }
+
+ .menu a:hover {
+
+   transform: translateY(18px);
+   background-color: rgb(150, 150, 150);
+ }
+
+ .texto {
+   color: #ffffff;
+   font-size: 25px;
+   text-align: justify;
+
+ }
+
+
+
+
+ .nosotros {
+   margin-bottom: 60px;
+
+ }
+
+ .subtitulo {
+   font-size: 25px;
+   color: rgb(0, 0, 0);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 700;
+   z-index: 2;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+
+ }
+
+ .subtitulo span {
+
+   padding: 0 15px;
+   z-index: 99;
+   position: relative;
+
+ }
+
+ .subtitulo::after {
+   content: "";
+   display: inline-block;
+   height: px;
+   width: 100%;
+   background-color: #000000;
+   position: relative;
+   top: - 29px;
+   z-index: 1;
+
+
+ }
+
+
+ .titulito {
+   font-size: 50px;
+   color: rgb(255, 255, 255);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 700;
+   z-index: 2;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+
+ }
+
+
+ .reyfly {
+   transform: translate(-50%);
+
+   animation: arriba 10s infinite;
+   animation-delay: 5s;
+   animation-iteration-count: 2;
+
+ }
+
+ body {
+
+
+   background-color: #000000;
+
+ }
+
+ /* minuto 45:27*/
+
+
+ .image{
+text-align: left;
+
+ }
+

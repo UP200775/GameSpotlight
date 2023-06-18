@@ -1,0 +1,34 @@
+footer {
+    background-color: rgb(51, 46, 46);
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    flex-grow: 1;
+  }
+  
+  .logo img {
+    max-width: 100px;
+  }
+  
+  .redes-sociales {
+    flex-grow: 1;
+    text-align: right;
+  }
+  
+  .redes-sociales a {
+    display: inline-block;
+    margin-left: 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
