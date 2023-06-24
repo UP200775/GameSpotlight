@@ -13,3 +13,8 @@
 .dropdown-toggle:not(:focus) {
   outline: 0;
 }
+
+.menu a:hover {
+  transform: translateY(-10px);
+  background-color: rgb(150, 150, 150);
+}
