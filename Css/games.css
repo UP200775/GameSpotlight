@@ -1,335 +1,129 @@
- * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
- }
-
- :root {
-   --negro: #000000;
-   --verde: #09ff00;
- }
-
- body {
-   font-size: 20px;
-   font-family: 'Comic Neue', sans-serif;
-
- }
-
- p {
-   font-size: 22px;
- }
-
-
- .contenido-header {
-   width: 100%;
-   height: 100vh;
-   background-image: url(060.jpg);
-   /* fondo de la pagina y sus caractersticas */
-   background-position: center;
-   background-size: cover;
-   background-attachment: fixed;
-
- }
-
- .contenido-header .fondo {
-
-   width: 0%;
-   height: 100%;
-   max-width: 100%;
-   background-image: url(UPA.gif);
-   /* poner fondo movible con raton */
- }
-
-
- .contenido-header .texto {
-
-   width: calc(100vw - 20px);
-   height: 100vh;
-   font-size: 150px;
-   font-weight: 400;
-   font-family: sans-serif;
-   font-style: italic;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   color: rgb(59, 51, 51);
-   mix-blend-mode: multiply;
-
-
- }
-
-
- /* Estilos del menu */
-
- .menu {
-   background-color: rgb(51, 46, 46);
-   width: 100%;
-   position: sticky;
-   /* para hacer que no se mueva de arriba */
-   top: 0;
-   /* aqui tambien -> */
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-style: italic;
-   padding: 5px;
-   z-index: 999;
-   text-align: center;
-   justify-content: center;
-   margin-bottom: 100px;
- }
-
- /* minuto 34:46 */
-
- .menu a {
-   display: inline-block;
-   padding: 10px 30px;
-   font-size: 26px;
-   margin: 0 10px;
-   background-color: rgb(52, 46, 46);
-   transition: .5s ease all;
-   color: rgb(255, 255, 255);
-   text-decoration: none;
- }
-
- .menu a:hover {
-
-   transform: translateY(18px);
-   background-color: rgb(150, 150, 150);
- }
-
- .texto {
-   color: #ffffff;
-   font-size: 25px;
-   text-align: justify;
-
- }
-
-
-
-
- .nosotros {
-   margin-bottom: 60px;
-
- }
-
- .subtitulo {
-   font-size: 25px;
-   color: rgb(0, 0, 0);
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   font-weight: 700;
-   z-index: 2;
-   text-transform: uppercase;
-   margin-bottom: 20px;
-
- }
-
- .subtitulo span {
-
-   padding: 0 15px;
-   z-index: 99;
-   position: relative;
-
-
- }
-
- .subtitulo::after {
-   content: "";
-   display: inline-block;
-   height: px;
-   width: 100%;
-   background-color: #000000;
-   position: relative;
-   top: - 29px;
-   z-index: 1;
-
-
- }
-
-
- .titulito {
-   font-size: 50px;
-   color: rgb(255, 255, 255);
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   font-weight: 700;
-   z-index: 2;
-   text-transform: uppercase;
-   margin-bottom: 20px;
-
- }
-
- .fondito1 {}
-
- @keyframes arriba {
-   0% {
-     transform: translateX(0);
-   }
-
-   50% {
-     transform: translateX(50%);
-
-   }
-
-   100% {
-     transform: translateX(100%);
-
-
-   }
- }
-
- .reyfly {
-   transform: translate(-50%);
-
-   animation: arriba 10s infinite;
-   animation-delay: 5s;
-   animation-iteration-count: 2;
-
- }
-
- body {
-
-
-   background-color: #000000;
-
- }
-
- /* minuto 45:27*/
-
-
- .image{
-text-align: left;
-
- }
-
- form {
-  width: 400px;
-  margin: 0 auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
-  color: #ffffff;
+body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: rgb(31, 27, 27);
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
-}
-
-input[type="submit"] {
-  background-color: #00fff2;
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-.btn {
-  background-color: #00fff2;
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
 
 .card {
-  text-align: center;
-  padding: 20px;
-  border: 5px solid #00fff2;
-  border-radius: 5px;
-}
-.trabajadores {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.trabajador {
-  width: 400px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px;
-  border: 5px solid #00fff2;
-  border-radius: 5px;
-  background-color: #ffffff;
-}
-
-/* CSS para videojuegos.html */
-.gotys {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.tarjeta {
-  text-align: center;
-  padding: 20px;
-  border: 5px solid cyan;
-  border-radius: 5px;
-  background-color: gold;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-
-/* CSS para cada juego */
-.juego {
-  width: 1080px;
-  height: fit-content;
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px;
-  border: 5px solid #c5fa04ec;
-  border-radius: 5px;
-  background-color: #00fff7;
-}
-
-/* CSS para cada boton */
-.vm {
-  background: #000000;
-  --c: red;
-  color: var(--c);
-  font-size: 16px;
-  border: 0.3em solid var(--c);
-  border-radius: 0.5em;
-  width: 12em;
-  height: 3em;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: sans-serif;
-  letter-spacing: 0.1em;
-  text-align: center;
-  line-height: 3em;
   position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: 0.5s;
-  margin: 1em;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
 }
 
-.portadas {
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
 
-  height: 250px;
-  
-  width: 250px;
-  
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  
-  }
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.650);
+  text-align: center;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(3, 35, 54);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 15px;
+}
+
+.card .back .link a {
+  color: #f3f3f3;
+}
+
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card .back p {
+  letter-spacing: 1px;
+} 
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
 
 
+.btn{
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  margin: 10px 0;
+  border: 2px solid #0037ff;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+.btn::before{
+  background: #00ccffc6;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
 
-
-
-
-
-
-
+.btn1::before{
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.btn1:hover::before{
+  height: 520%;
+}
