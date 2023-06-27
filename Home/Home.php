@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
@@ -53,7 +53,6 @@
   </header>
 
   <body  style="background-color:#000000;">
-  
     <div id="main">
       <div class="container">
         
@@ -129,32 +128,97 @@
 
         <div class="row mar-top-80">
           <div class="col-md-12">
-            <h3>Los mejores <strong>JUEGOS</strong> para el 2023. <i class="fa fa-space-shuttle pull-right hidden-xs-down" aria-hidden="true"></i></h3>
+            <h3>Los juegos más reientes<i class="fa fa-space-shuttle pull-right hidden-xs-down" aria-hidden="true"></i></h3>
 
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="img/gallery01.jpg" alt="Imagen 1" class="img-fluid">
-              </div>
-              <div class="col-sm-4">
-                <img src="img/gallery02.jpg" alt="Imagen 2" class="img-fluid">
-              </div>
-              <div class="col-sm-4">
-                <img src="img/gallery03.jpg" alt="Imagen 3" class="img-fluid">
-              </div>
-              <div class="col-sm-4">
-                <br>
-                <img src="img/gallery01.jpg" alt="Imagen 1" class="img-fluid">
-              </div>
-              <div class="col-sm-4">
-                <br>
-                <img src="img/gallery02.jpg" alt="Imagen 2" class="img-fluid">
-              </div>
-              <div class="col-sm-4">
-                <br>
-                <img src="img/gallery03.jpg" alt="Imagen 3" class="img-fluid">
-              </div>
+            <div class="row justify-content-center">
+              <?php
+              $servername = "localhost:3307";
+              $username = "root";
+              $password = "";
+              $dbname = "gamespotlight";
+        
+              $conn = new mysqli($servername, $username, $password, $dbname);
+        
+              // Verificar la conexión
+              if ($conn->connect_error) {
+                  die("Conexión fallida: " . $conn->connect_error);
+              }
+        
+              $sql = "SELECT * FROM vista_ultimos_3_articulos";
+              $result = $conn->query($sql);
+        
+              while ($row = $result->fetch_assoc()) {
+                  $Nombre_Articulo = $row["Nombre_Articulo"];
+                  $Autor = $row["Autor"];
+                  $Imagen_Articulo = base64_encode($row['Imagen_Articulo']);
+        
+                  echo '<div class="card m-4 text-white bg-dark" style="width: 17.5rem;">';
+                  
+                      echo '<div class="card-body">';
+                      echo '<h5 class="card-title">' . $Nombre_Articulo . '</h5>';
+                      echo '</div>';
+        
+                      echo '<ul class="list-group list-group-flush">';
+                      echo '<h6><strong><li class="list-group-item text-center text-white bg-dark">Autor: </strong>' . $Autor . '</li></h6>';
+                      
+                      echo '</ul>';
+        
+                      echo '<div class="card-body">';
+                      echo '<button type="button" class="btn btn-outline-primary btn-lg btn-block">Leer más</button>';
+                      echo '</div>';
+        
+                  echo '</div>';
+              }
+        
+              $conn->close();
+              ?>
             </div>
 
+            <h3>Los arttículos más reientes<i class="fa fa-space-shuttle pull-right hidden-xs-down" aria-hidden="true"></i></h3>
+
+            <div class="row justify-content-center">
+              <?php
+              $servername = "localhost:3307";
+              $username = "root";
+              $password = "";
+              $dbname = "gamespotlight";
+        
+              $conn = new mysqli($servername, $username, $password, $dbname);
+        
+              // Verificar la conexión
+              if ($conn->connect_error) {
+                  die("Conexión fallida: " . $conn->connect_error);
+              }
+        
+              $sql = "SELECT * FROM vista_ultimos_3_articulos";
+              $result = $conn->query($sql);
+        
+              while ($row = $result->fetch_assoc()) {
+                  $Nombre_Articulo = $row["Nombre_Articulo"];
+                  $Autor = $row["Autor"];
+                  $Imagen_Articulo = base64_encode($row['Imagen_Articulo']);
+        
+                  echo '<div class="card m-4 text-white bg-dark" style="width: 17.5rem;">';
+                  
+                      echo '<div class="card-body">';
+                      echo '<h5 class="card-title">' . $Nombre_Articulo . '</h5>';
+                      echo '</div>';
+        
+                      echo '<ul class="list-group list-group-flush">';
+                      echo '<h6><strong><li class="list-group-item text-center text-white bg-dark">Autor: </strong>' . $Autor . '</li></h6>';
+                      
+                      echo '</ul>';
+        
+                      echo '<div class="card-body">';
+                      echo '<button type="button" class="btn btn-outline-primary btn-lg btn-block">Leer más</button>';
+                      echo '</div>';
+        
+                  echo '</div>';
+              }
+        
+              $conn->close();
+              ?>
+            </div>
           </div>
         </div>
 
