@@ -7,6 +7,9 @@
     <title>Plantilla de Artículo</title>
     <link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">
 </head>
+<header>
+<?php include '../Header/headers/index.php'; ?>
+</header>
 <body>
     <div class="container">
         <h1>Plantilla de Artículo</h1>

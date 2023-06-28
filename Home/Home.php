@@ -7,8 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
@@ -25,31 +24,8 @@
 
   </head>
 
-  <header class="p-3 text-bg-dark">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-        </a>
-
-        <a href="../../Home.html" class="nav-link px-2 text-white">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <img src="../../Imagenes/logo.png" alt="Bootstrap" width="50" height="50">
-        </button>
-        </a>
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="../Artículos/Artículos.php" class="nav-link px-2 text-white">Artículos</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Videojuegos</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Staff</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Comunícate</a></li>
-        </ul>
-
-        <div class="text-end">
-          <button type="button" class="btn btn-outline-primary me-2">Inicia Sesión</button>
-          <button type="button" class="btn btn-warning">Regístrate</button>
-        </div>
-      </div>
-    </div>
+  <header">
+  <?php include '../Header/headers/index.php'; ?>
   </header>
 
   <body  style="background-color:#000000;">
@@ -128,7 +104,7 @@
 
         <div class="row mar-top-80">
           <div class="col-md-12">
-            <h3>Los juegos más reientes<i class="fa fa-space-shuttle pull-right hidden-xs-down" aria-hidden="true"></i></h3>
+            <h3>Los artículos más reientes<i class="fa fa-space-shuttle pull-right hidden-xs-down" aria-hidden="true"></i></h3>
 
             <div class="row justify-content-center">
               <?php
@@ -174,50 +150,10 @@
               ?>
             </div>
 
-            <h3>Los arttículos más reientes<i class="fa fa-space-shuttle pull-right hidden-xs-down" aria-hidden="true"></i></h3>
+            <h3>Los juegos más reientes<i class="fa fa-space-shuttle pull-right hidden-xs-down" aria-hidden="true"></i></h3>
 
             <div class="row justify-content-center">
-              <?php
-              $servername = "localhost:3307";
-              $username = "root";
-              $password = "";
-              $dbname = "gamespotlight";
-        
-              $conn = new mysqli($servername, $username, $password, $dbname);
-        
-              // Verificar la conexión
-              if ($conn->connect_error) {
-                  die("Conexión fallida: " . $conn->connect_error);
-              }
-        
-              $sql = "SELECT * FROM vista_ultimos_3_articulos";
-              $result = $conn->query($sql);
-        
-              while ($row = $result->fetch_assoc()) {
-                  $Nombre_Articulo = $row["Nombre_Articulo"];
-                  $Autor = $row["Autor"];
-                  $Imagen_Articulo = base64_encode($row['Imagen_Articulo']);
-        
-                  echo '<div class="card m-4 text-white bg-dark" style="width: 17.5rem;">';
-                  
-                      echo '<div class="card-body">';
-                      echo '<h5 class="card-title">' . $Nombre_Articulo . '</h5>';
-                      echo '</div>';
-        
-                      echo '<ul class="list-group list-group-flush">';
-                      echo '<h6><strong><li class="list-group-item text-center text-white bg-dark">Autor: </strong>' . $Autor . '</li></h6>';
-                      
-                      echo '</ul>';
-        
-                      echo '<div class="card-body">';
-                      echo '<button type="button" class="btn btn-outline-primary btn-lg btn-block">Leer más</button>';
-                      echo '</div>';
-        
-                  echo '</div>';
-              }
-        
-              $conn->close();
-              ?>
+              
             </div>
           </div>
         </div>
@@ -226,47 +162,16 @@
         </div>
 
       </div>
-<br>
-    </div>
-    <div class="icon-bar">
+
+<footer>
+<div class="icon-bar">
       <a href="#"><i style="font-size:44px;color:rgb(38, 149, 201)" class="fa fa-facebook-official"></i></a> 
       <a href="#"><i style="font-size:35px;color:rgb(236, 236, 236)" class="fa fa-share"></i></a> 
       <a href="#"><i class="fa fa-instagram" style="font-size:44px;color:rgb(255, 0, 212)"></i></a> 
       <a  href="#"><i class='fa fa-twitter' style='font-size:48px;color:rgb(0, 183, 255)'></i></a> 
       <a  href="#"><i class="fa fa-youtube-play" style="font-size:35px;color:red"></i></a> 
     </div>
-
-
-    <footer>
-
-
-     
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <strong>fastfood</strong> &copy;2016 - Todos los derechos reservados. Sitio diseñado por <a href="#">Rafel Sansó</a>
-          </div>
-
-          <div class="col-sm-6 text-xs-right">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="#">Inicio</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Aviso legal</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Cookies</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    
-    </footer>
+</footer>
 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
