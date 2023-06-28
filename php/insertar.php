@@ -5,12 +5,11 @@
     <meta charset="UTF=-8">
     <META name="viewport" content="width=device-width, initial-scale = 1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <title>Cesar</title> <!--este es un comentaro : sirve para popner nombre a la pagina-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../Css/estilos.css">
+    <title>Comunicate</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Css/staff.css">  
-    <link rel="stylesheet" href="../Css/header.css">
 </head>
+
 <header class="p-3 text-bg-dark">
   <div class="container">
     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -37,15 +36,60 @@
     </div>
   </div>
 </header>
-<body >
-    <div class="trabajador">
-        <img src="../Imagenes/Staff/Cesar.jpeg" alt="Foto del Trabajador" width="150" height="150">
-        <h2>Cesar Alejandro Hernandez Macias</h2>
-        <p>Edad: 21</p>
-        <p>Matricula: UP200775</p>
-        <p>Videojuego favorito: Red Dead Redemption 2</p>
-        <p>Puesto: Lider periodista</p>
-        <a href="Staff.html">Volver a la Lista</a>
-      </div>
-</body>
-</HTML>
+<?php
+// Datos de conexión a la base de datos
+$servername = "localhost";
+$username = "root";
+$password = "lovemysql2023";
+$dbname = "gamespotlight";
+
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar la conexión
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
+
+echo "<div class='trabajador'>Conexión exitosa";
+
+// Obtener los datos del formulario
+$nombre = $_POST["nombre"];
+$apellidos = $_POST["apellidos"];
+$numero = $_POST["numero"];
+$correo = $_POST["correo"];
+$mensaje = $_POST["mensaje"];
+
+// Consulta SQL para insertar los datos en la tabla "comunicate"
+$sql = "INSERT INTO comunicate (nombre, apellidos, numero, correo, mensaje) VALUES ('$nombre', '$apellidos', '$numero', '$correo', '$mensaje')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "<p>Datos insertados correctamente.</p>";
+} else {
+    echo "Error al insertar datos: " . $conn->error;
+}
+
+// Cerrar conexión
+$conn->close();
+?>
+
+<p><button type="button" class="btn btn-primary" onclick="location.href='../Comunicate/Comunicate.php'">Aceptar</button></p></div>
+
+<footer>
+  <link rel="stylesheet" href="../Css/footer.css">
+  <div class="footer-container">
+    <div class="logo">
+      <img src="../Imagenes/logo.png" alt="Logo de la empresa">
+    </div>
+    <div>
+      2023 © GameSpotlight
+    </div>
+    <div class="redes-sociales">
+      <a href="enlace-a-red-social"><img src="../Imagenes/facebook.png"></a>
+      <a href="enlace-a-red-social"><img src="../Imagenes/instagram.png"></a>
+      <a href="enlace-a-red-social"><img src="../Imagenes/twitter.png"></a>
+    </div>
+  </div>
+</footer>
+
+</html>
