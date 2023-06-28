@@ -16,16 +16,6 @@
 </header>
 
 <body>
-    <nav class="menu">
-        <a href="../Home/Home.html">
-            <img src="../Imagenes/logo.png" align="left" width="100px" height="100">
-        </a>
-            <a href="../Artículos/Artículos.php">Artículos</a>
-            <a href="../Videojuegos/videojuegos.html">Videojuegos</a>
-            <a href="../Staff/Staff.html">Staff</a>
-            <a href="../Comunicate/Comunicate.html">Comunícate</a>
-            <a href="../Inicio y Registro de sesion/formulario.html"><img class="user-img2" src="../Imagenes/Staff/Yael2.jpeg" width="50px" height="50"/> </a>
-    </nav>
     <div class="card">
       <div class="face front">
           <img src="../Imagenes/Games/madden2004.jpg">

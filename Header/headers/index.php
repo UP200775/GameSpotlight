@@ -18,13 +18,15 @@
         </a>
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="../Artículos/Artículos.php" class="nav-link px-2 text-white">Artículos</a></li>
-          <li><a href="../videojuegos/videojuegos.html" class="nav-link px-2 text-white">Videojuegos</a></li>
+          <li><a href="../videojuegos/videojuegos.php" class="nav-link px-2 text-white">Videojuegos</a></li>
           <li><a href="../Staff/Staff.php" class="nav-link px-2 text-white">Staff</a></li>
           <li><a href="../Comunicate/comunicate.php" class="nav-link px-2 text-white">Comunícate</a></li>
         </ul>
 
         <div class="text-end">
-          <button type="button" class="btn btn-outline-primary me-2">Inicia Sesión</button>
+        <a href="../Inicio y Registro de sesion/formulario.html">
+          <button type="button"  class="btn btn-outline-primary me-2">Inicia Sesión</button>
+        </a>  
           <button type="button" class="btn btn-warning">Regístrate</button>
         </div>
       </div>
