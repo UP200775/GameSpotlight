@@ -40,7 +40,7 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-            <img src="img/slider.jpg" alt="First slide " class="container">
+            <img src="img/slider.jpg" alt="First slide " style="height: 400px;width: 1000px">
               
               
               <div class="carousel-caption">
@@ -55,7 +55,7 @@
 
             </div>
             <div class="carousel-item" >
-              <img src="img/slider2.jpg" alt="First slide" class="d-block w-100">
+              <img src="img/slider2.jpg" alt="First slide" style="height: 400px;width: 1000px">
               
               <div class="carousel-caption">
                 <h2>StarField</h2>
@@ -68,14 +68,13 @@
             </div>
 
             <div class="carousel-item">
-              <img src="img/slider3.jpg" alt="First slide">
+              <img src="img/slider3.jpg" alt="First slide" style="height: 400px;width: 1000px">
               
               <div class="carousel-caption">
 
                 <h2>Star Wars Jedi: Survivor</h2>
                 <img alt="menú 2x1" src="img/logo star wars.png" width="100" height="100" >
-                <p class="h4">La historia de Cal Kestis continúa en STAR WARS Jedi: Survivor™, una nueva aventura épica que llevará a Cal más lejos que nunca mientras lucha para proteger la galaxia de sucumbir ante la oscuridad.</p>
-                <p>.</p>
+                <p class="h4">La historia de Cal Kestis continúa en STAR WARS Jedi: Survivor™, una nueva aventura épica que llevará a Cal más lejos que nunca.</p>
                 <a href="#" class="btn btn-secondary">INFO</a>
 
               </div>
@@ -150,8 +149,7 @@
               ?>
             </div>
 
-            <h3>Los juegos más reientes<i class="fa fa-space-shuttle pull-right hidden-xs-down" aria-hidden="true"></i></h3>
-
+           
             <div class="row justify-content-center">
               
             </div>
@@ -163,16 +161,13 @@
 
       </div>
 
-<footer>
-<div class="icon-bar">
+      <div class="icon-bar">
       <a href="#"><i style="font-size:44px;color:rgb(38, 149, 201)" class="fa fa-facebook-official"></i></a> 
       <a href="#"><i style="font-size:35px;color:rgb(236, 236, 236)" class="fa fa-share"></i></a> 
       <a href="#"><i class="fa fa-instagram" style="font-size:44px;color:rgb(255, 0, 212)"></i></a> 
       <a  href="#"><i class='fa fa-twitter' style='font-size:48px;color:rgb(0, 183, 255)'></i></a> 
       <a  href="#"><i class="fa fa-youtube-play" style="font-size:35px;color:red"></i></a> 
     </div>
-</footer>
-
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" crossorigin="anonymous"></script>
