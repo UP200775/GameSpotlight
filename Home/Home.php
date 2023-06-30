@@ -24,7 +24,7 @@
 
   </head>
 
-  <header">
+  <header>
   <?php include '../Header/headers/index.php'; ?>
   </header>
 
@@ -40,7 +40,11 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
+<<<<<<< Updated upstream
             <img src="img/slider.jpg" alt="First slide " style="height: 400px;width: 1000px">
+=======
+            <img src="img/slider.jpg" alt="First slide " style="height:400px;width:1000px">
+>>>>>>> Stashed changes
               
               
               <div class="carousel-caption">
@@ -55,7 +59,11 @@
 
             </div>
             <div class="carousel-item" >
+<<<<<<< Updated upstream
               <img src="img/slider2.jpg" alt="First slide" style="height: 400px;width: 1000px">
+=======
+              <img src="img/slider2.jpg" alt="First slide" class="d-block w-100"style="height:400px;width:1000px">
+>>>>>>> Stashed changes
               
               <div class="carousel-caption">
                 <h2>StarField</h2>
@@ -68,13 +76,21 @@
             </div>
 
             <div class="carousel-item">
+<<<<<<< Updated upstream
               <img src="img/slider3.jpg" alt="First slide" style="height: 400px;width: 1000px">
+=======
+              <img src="img/slider3.jpg" alt="First slide" style="height:400px;width:1000px">
+>>>>>>> Stashed changes
               
               <div class="carousel-caption">
 
                 <h2>Star Wars Jedi: Survivor</h2>
                 <img alt="menú 2x1" src="img/logo star wars.png" width="100" height="100" >
+<<<<<<< Updated upstream
                 <p class="h4">La historia de Cal Kestis continúa en STAR WARS Jedi: Survivor™, una nueva aventura épica que llevará a Cal más lejos que nunca.</p>
+=======
+                <p class="h4">La historia de Cal Kestis continúa en STAR WARS Jedi: Survivor™, una nueva aventura épica que llevará a Cal más lejos que nunca mientras lucha para proteger la galaxia de sucumbir ante la oscuridad.</p>
+>>>>>>> Stashed changes
                 <a href="#" class="btn btn-secondary">INFO</a>
 
               </div>
