@@ -1,24 +1,15 @@
 <!DOCTYPE html>
-<HTML lang="en">
-
+<html lang="en" >
 <head>
-    <meta charset="UTF=-8">
-   
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <title>Artículos</title>
-    <link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <title>CodePen - Blog Card with Hover State</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
 
-    <link rel="stylesheet" href="../Header/Header.css">  
 </head>
-
-<header>
-<?php require_once'../Header/Header.php'; ?>
-</header>
-
 <body>
 
-  <div class="row justify-content-center">
-      <?php
+  <?php
       $servername = "localhost:3307";
       $username = "root";
       $password = "";
@@ -41,6 +32,25 @@
           $Imagen_Articulo = base64_encode($row['Imagen_Articulo']);
           $Fecha = $row["Fecha_Articulo"];
 
+          <div class="blog-card spring-fever">
+            <div class="title-content">
+              <h3>SPRING FEVER</h3>
+              <hr />
+              <div class="intro">Yllamco laboris nisi ut aliquip ex ea commodo.</div>
+              </div><!-- /.title-content -->
+                <div class="card-info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim. 
+                </div><!-- /.card-info -->
+                  <div class="utility-info">
+                    <ul class="utility-list">
+                      <li class="comments">12</li>
+                      <li class="date">03.12.2015</li>
+                    </ul>
+                    </div><!-- /.utility-info -->
+                      <!-- overlays -->
+                      <div class="gradient-overlay"></div>
+                      <div class="color-overlay"></div>
+                      </div><!-- /.blog-card -->
           echo '<div class="card col-sm-6 mb-3 mb-sm-0 p-4 m-4" style="width: 23rem;">';
           
               echo '<img src="data:image/jpeg;base64,' . $Imagen_Articulo . '" />';
@@ -63,22 +73,7 @@
 
       $conn->close();
       ?>
-  </div>
+  <script  src="./script.js"></script>
+
 </body>
-<footer>
-  <link rel="stylesheet" href="../Css/footer.css">
-  <div class="footer-container">
-    <div class="logo">
-      <img src="Imagenes/logo.png" alt="Logo de la empresa">
-    </div>
-    <div>
-      2023 © GameSpotlight
-    </div>
-    <div class="redes-sociales">
-      <a href="enlace-a-red-social"><img src="Imagenes/facebook.png"></a>
-      <a href="enlace-a-red-social"><img src="Imagenes/instagram.png"></a>
-      <a href="enlace-a-red-social"><img src="Imagenes/twitter.png"></a>
-    </div>
-  </div>
-</footer>
-</HTML>
+</html>

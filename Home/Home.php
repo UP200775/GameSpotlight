@@ -19,13 +19,13 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="../Header/Header.css">
   
 
   </head>
 
   <header>
-  <?php include '../Header/headers/index.php'; ?>
+  <?php require_once'../Header/Header.php'; ?>
   </header>
 
   <body  style="background-color:#000000;">
