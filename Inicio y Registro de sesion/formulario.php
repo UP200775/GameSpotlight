@@ -12,38 +12,32 @@
 </head>
 <body>
     <script src="main.js"></script>
-    
     <div class="modal-dialog text-center">
+        
         <div class="col-sm-10 main-section">
-            <div  id="user-group">
-                <h1 class="text-light">Crea una Cuenta ahora, unete a nuestra comunidad</h1> 
-            </div>
-            <div class="modal-content p-4">
+            <div class="modal-content">
+                <div class="col-12 user-img">
+                    <img src="../Imagenes/logo.png" th:src="@{/img/user.png}"/>
+                </div>
                 <form class="col-12" th:action="@{/login}" method="get">
                     <div class="form-group" id="user-group">
-                        <input type="text" class="form-control" placeholder=" Nombre de usuario" name="username"/>
-                    </div>
-                    <div class="form-group" id="user-group">
-                     <input type="text" class="form-control" placeholder="Correo Electronico" name="correo"/>
+                        <input type="text" class="form-control" placeholder="Usuario" name="username"/>
                     </div>
                     <div class="form-group" id="contrasena-group">
                         <input type="password" class="form-control" placeholder="Contraseña" name="password"/>
                     </div>
-                    <div class="form-group" id="contrasena-group">
-                        <input type="password" class="form-control" placeholder="Repite la Contraseña" name="password"/>
-                    </div>
-                    <button  class="btn btn-primary" onclick="location.href=''" ><i class="fas fa-sign-in-alt" ></i>  Registro </button>
+                    <button  class="btn btn-primary" onclick="location.href='../Home/Home.php'" ><i class="fas fa-sign-in-alt" ></i>  Iniciar sesión </button>
                 </form>
                 <div class="col-12 forgot">
                     <a href="../Inicio y Registro de sesion/olvide.html">Olvide la contraseña</a>
                 </div>
                 <div class="col-12 forgot">
-                    <a href="../Inicio y Registro de sesion/formulario.html">Inicia Sesion</a>
+                    <a href="../Inicio y Registro de sesion/registro.html">Registrate</a>
                 </div>
              
-      
             </div>
         </div>
     </div>
 </body>
+
 </html>
