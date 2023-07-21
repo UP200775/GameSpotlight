@@ -5,8 +5,8 @@
     <META name="viewport" content="width=device-width, initial-scale = 1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Videojuegos</title>
-
-    <link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="../Header/Header.css">
     <link rel="stylesheet" href="games.css">
 </head>
 
@@ -15,7 +15,7 @@
 </header>
 
 <body>
-<div class="row">
+<div class="card-container">
     <div class="card">
       <div class="face front">
           <img src="../Imagenes/Games/madden2004.jpg">
