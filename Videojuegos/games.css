@@ -6,12 +6,19 @@
 }
 
 body {
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   background: rgb(31, 27, 27);
 }
 
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width:fit-content;
+}
 
 .card {
   position: relative;
