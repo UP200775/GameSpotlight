@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="UTF=-8">
-    <META name="viewport" content="width=device-width, initial-scale = 1.0">
+   
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Artículos</title>
     <link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Css/articulos.css">  
+
+    <link rel="stylesheet" href="../Header/Header.css">  
 </head>
 
 <header>
-<?php include '../Header/headers/index.php'; ?>
+<?php require_once'../Header/Header.php'; ?>
 </header>
 
 <body>

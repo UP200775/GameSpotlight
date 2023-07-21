@@ -38,10 +38,10 @@
 </header>
 <?php
 // Datos de conexión a la base de datos
-$servername = "localhost:3306";
-        $username = "root";
-        $password = "";
-        $dbname = "gamespotlight";
+$servername = "localhost";
+$username = "root";
+$password = "lovemysql2023";
+$dbname = "gamespotlight";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);

@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Videojuegos</title>
 
-    <link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="games.css">
-
 </head>
 
 <header>
-<?php include '../Header/headers/index.php'; ?>
+<?php include '../Header/Header.html'; ?>
 </header>
 
 <body>
+<div class="row">
     <div class="card">
       <div class="face front">
           <img src="../Imagenes/Games/madden2004.jpg">
@@ -354,7 +354,7 @@
         </div>
     </div>
   </div>
-</div>  
+</div> 
 </body>
 <!--<footer>
   <link rel="stylesheet" href="../Css/footer.css">

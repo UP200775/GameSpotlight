@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Página web con artículo y comentarios</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <article>
+                <h2>Título del artículo</h2>
+                <?php
+                    $archivo = '../hola.txt';
+
+                    // Verificar si el archivo existe
+                    if (file_exists($archivo)) {
+                        // Leer el contenido del archivo
+                        $contenido = file_get_contents($archivo);
+
+                        // Mostrar el contenido
+                        echo nl2br($contenido);
+                    } else {
+                        echo 'El archivo no existe.';
+                    }
+                ?>
+            </article>
+            
+            <aside>
+                <h3>Artículos relacionados</h3>
+                <div class="related-articles">
+                    <div class="card">
+                        <img src="imagen-articulo1.jpg" alt="Imagen del artículo 1">
+                        <h4>Título del artículo 1</h4>
+                        <p>Descripción breve del artículo 1.</p>
+                        <a href="#">Leer más</a>
+                    </div>
+                    <div class="card">
+                        <img src="imagen-articulo2.jpg" alt="Imagen del artículo 2">
+                        <h4>Título del artículo 2</h4>
+                        <p>Descripción breve del artículo 2.</p>
+                        <a href="#">Leer más</a>
+                    </div>
+                    <div class="card">
+                        <img src="imagen-articulo3.jpg" alt="Imagen del artículo 3">
+                        <h4>Título del artículo 3</h4>
+                        <p>Descripción breve del artículo 3.</p>
+                        <a href="#">Leer más</a>
+                    </div>
+                </div>
+        </aside>
+
+        </main>
+        
+        <div class="comments-section">
+            <h3>Comentarios</h3>
+            <div class="comment">
+                <h4>Usuario1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="comment">
+                <h4>Usuario2</h4>
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            
+            <form class="comment-form">
+                <h4>Deja un comentario</h4>
+                <input type="text" placeholder="Nombre">
+                <textarea placeholder="Comentario"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Derechos de autor &copy; 2023 Nombre del Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
