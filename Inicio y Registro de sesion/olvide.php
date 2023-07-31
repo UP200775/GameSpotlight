@@ -6,11 +6,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-<<<<<<< Updated upstream
     <link rel="stylesheet" type="text/css" href="../Css/formulario.css" th:href="@{/css/index.css}">
-=======
-    <link rel="stylesheet" type="text/css" href="C:\xampp\htdocs\GameSpotlight-main\Css\formulario.css" th:href="@{/css/index.css}">
->>>>>>> Stashed changes
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 </head>
@@ -22,34 +18,74 @@
             <div  id="user-group">
                 <h1 class="text-light">Has olvidado la contraseña, introduce los siguientes datos</h1> 
             </div>
-            <div class="modal-content p-4">
-                <form class="col-12" th:action="@{/login}" method="get">
-                    <div class="form-group" id="user-group">
-                        <input type="text" class="form-control" placeholder=" Nombre de usuario" name="username"/>
+            <div class="modal-content p-4" id="forms">
+                <form class="col-12" method="POST" class="needs-validation">
+                <div class="form-group" id="user-group">
+                     <input type="email" class="form-control" placeholder="Correo Electronico" name="email" required/>
                     </div>
-                    <div class="form-group" id="user-group">
-                     <input type="text" class="form-control" placeholder="Correo Electronico" name="correo"/>
-                    </div>
-                  
-                    <button  class="btn btn-primary" onclick="location.href='../Home/Home.html'"  ><i class="fas fa-sign-in-alt" ></i>  Buscar cuenta </button>
+                    <button  class="btn btn-primary" type="submit" ><i class="fas fa-sign-in-alt" ></i>  Buscar Cuenta </button>
+                </form>
                 </form>
                 <div class="col-12 forgot">
-                    <a href="../Inicio y Registro de sesion/formulario.html">Inicia Sesion</a>
+                    <a href="../Inicio y Registro de sesion/formulario.php">Inicia Sesion</a>
                 </div>
              
                 <div class="col-12 forgot">
-                    <a href="../Inicio y Registro de sesion/registro.html">Registrate</a>
+                    <a href="../Inicio y Registro de sesion/registro.php">Registrate</a>
                 </div>
-             
             </div>
         </div>
     </div>
-    <script>
-    function myFunction() {
-  alert("Hola, esto es una alerta");
-
-    }
-
-    </script>
 </body>
 </html>
+
+<?php
+session_start();
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+// Datos de conexión a la base de datos
+$servername = "localhost:3306";
+        $username = "root";
+        $password = "";
+        $dbname = "gamespotlight";
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
+$email = $_POST["email"];
+$emailsesion = $_POST["email"];
+$_SESSION['email'] = $emailsesion;
+$query = "SELECT * FROM usuarios WHERE email = '$email'";
+$result = $conn->query($query);
+
+if ($result->num_rows > 0) {
+   
+    header("Location: enviodecorreo.php");
+} else {
+    
+}
+    $conn->close();
+}
+
+?>
+<script>
+
+  // Validación de formularios utilizando Bootstrap
+  (function () {
+    'use strict';
+    // Obtiene todos los formularios a los que se les aplicará la validación
+    var forms = document.querySelectorAll('.needs-validation');
+    // Itera sobre cada formulario y previene su envío en caso de ser inválido
+    Array.prototype.slice.call(forms).forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add('was-validated');
+      }, false);
+    });
+  })();
+
+  
+</script>

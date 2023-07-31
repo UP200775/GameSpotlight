@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Artículos</title>
-  <link rel="stylesheet" href="ye.css">
+  <link rel="stylesheet" href="HomeArticulo.css">
   <link rel="stylesheet" href="../Header/Header.css">
   <link rel="stylesheet" href="../Footer/estilos.css">
 </head>
 
 <header>
-  <?php require_once'../Header/Header.html'; ?>
+  <?php require_once'../Header/Header.php'; ?>
 </header>
 
 <body>
@@ -40,14 +40,14 @@
           $Fecha = $row["Fecha_Articulo"];
 
           echo '
-            <div class="blog-card spring-fever">
+            <div class="blog-card">
               <div class="title-content">
               <h3>' . $Nombre_Articulo . '</h3>
               <hr />
                 <div class="intro">Autor: ' . $Autor.' </div>        
               </div>
               <div class="card-info">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+              <button class="boton-mas" name="button" onclick="viewArticle(' . $ID_Articulo . ')">Leer más</button>
               </div>
               <div class="utility-info">
                 <ul class="utility-list">
@@ -55,15 +55,20 @@
                   <li class="date">' . $Fecha . '</li>          
                 </ul>
               </div>
-              <!-- overlays -->
               <div class="gradient-overlay"></div>
               <div class="color-overlay"></div>
             </div>';
       }
 
       $conn->close();
-
       ?>
+  </div>
+
+  <script>
+      function viewArticle(articleID) {
+        window.location.href = 'PlantillaArticulo.php?id=' + articleID;
+      }
+    </script>
 </body>
 
 <footer>
