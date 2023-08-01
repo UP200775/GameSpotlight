@@ -10,34 +10,13 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <link href="../Css/juego.css" rel="stylesheet" />
+        <link href="../Header/Header.css" rel="stylesheet"/>
+        <link href="../Footer/estilos.css" rel="stylesheet"/>
     </head>
 
-    <header class="p-3 text-bg-dark">
-        <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-            </a>
-    
-            <a href="../../Home.html" class="nav-link px-2 text-white">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <img src="../../Imagenes/logo.png" alt="Bootstrap" width="50" height="50">
-            </button>
-            </a>
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="../Artículos/Artículos.php" class="nav-link px-2 text-white">Artículos</a></li>
-              <li><a href="../Videojuegos/videojuegos.html" class="nav-link px-2 text-white">Videojuegos</a></li>
-              <li><a href="../Staff/Staff.html" class="nav-link px-2 text-white">Staff</a></li>
-              <li><a href="../Comunicate/Comunicate.html" class="nav-link px-2 text-white">Comunícate</a></li>
-            </ul>
-    
-            <div class="text-end">
-              <button type="button" class="btn btn-outline-primary me-2">Inicia Sesión</button>
-              <button type="button" class="btn btn-warning">Regístrate</button>
-            </div>
-          </div>
-        </div>
-      </header>
+    <header>
+      <?php require_once'../Header/Header.html'; ?>
+    </header>
 
     <body>
 
@@ -95,20 +74,7 @@
         
         <!-- Footer-->
         <footer>
-          <link rel="stylesheet" href="../Css/footer.css">
-          <div class="footer-container">
-            <div class="logo">
-              <img src="../Imagenes/logo.png" alt="Logo de la empresa">
-            </div>
-            <div>
-              2023 © GameSpotlight
-            </div>
-            <div class="redes-sociales">
-              <a href="enlace-a-red-social"><img src="../Imagenes/facebook.png"></a>
-              <a href="enlace-a-red-social"><img src="../Imagenes/instagram.png"></a>
-              <a href="enlace-a-red-social"><img src="../Imagenes/twitter.png"></a>
-            </div>
-          </div>
+        <?php require_once'../Footer/footer.html'; ?>
         </footer>
     </body>
 </html>

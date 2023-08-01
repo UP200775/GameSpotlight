@@ -18,7 +18,7 @@
     <main class="trabajadores">
         <?php
         // Establecer la conexión con la base de datos
-        $servername = "localhost:3307";
+        $servername = "localhost:3306";
         $username = "root";
         $password = "";
         $dbname = "gamespotlight";
