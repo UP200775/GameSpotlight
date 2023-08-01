@@ -7,13 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Comunicate</title>
     <link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Css/staff.css">
-
-  
+    <link rel="stylesheet" href="../Header/Header.css">
+    <link rel="stylesheet" href="../Footer/estilos.css">
+    <link rel="stylesheet" href="../Css/comunicate.css">
 </head>
 
 <header>
-<?php include '../Header/headers/index.php'; ?>
+<?php include '../Header/Header.html'; ?>
 </header>
 <body>
   <main class="container">
@@ -57,7 +57,6 @@
     </div>
   </main>
 
-  <script src="main.js"></script>
 
   <script>
     // Validación de formularios utilizando Bootstrap
@@ -83,20 +82,7 @@
 </body>
 
 <footer>
-  <link rel="stylesheet" href="../Css/footer.css">
-  <div class="footer-container">
-    <div class="logo">
-      <img src="../Imagenes/logo.png" alt="Logo de la empresa">
-    </div>
-    <div>
-      2023 © GameSpotlight
-    </div>
-    <div class="redes-sociales">
-      <a href="enlace-a-red-social"><img src="../Imagenes/facebook.png"></a>
-      <a href="enlace-a-red-social"><img src="../Imagenes/instagram.png"></a>
-      <a href="enlace-a-red-social"><img src="../Imagenes/twitter.png"></a>
-    </div>
-  </div>
+  <?php require_once'../Footer/footer.html'; ?>
 </footer>
 
 </html>
