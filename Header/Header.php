@@ -28,7 +28,7 @@
     </ul>
   </div>
   <div class="header-cta-buttons">
-    <a href="#">Registro</a>
-    <a href="#">Iniciar sesión</a>
+    <a href="../Inicio y Registro de sesion/registro.php">Registro</a>
+    <a href="../Inicio y Registro de sesion/formulario.php">Iniciar sesión</a>
   </div>
 </header>

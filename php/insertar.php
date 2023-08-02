@@ -38,9 +38,9 @@
 </header>
 <?php
 // Datos de conexión a la base de datos
-$servername = "localhost";
+$servername = "localhost:3307";
 $username = "root";
-$password = "lovemysql2023";
+$password = "";
 $dbname = "gamespotlight";
 
 // Crear conexión

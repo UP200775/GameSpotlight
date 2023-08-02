@@ -13,7 +13,7 @@
 </head>
 
 <header>
-<?php include '../Header/Header.html'; ?>
+<?php include '../Header/Header.php'; ?>
 </header>
 <body>
   <main class="container">

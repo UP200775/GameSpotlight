@@ -12,7 +12,7 @@
 </head>
 
 <header>
-<?php require_once'../Header/Header.html'; ?>
+<?php require_once'../Header/Header.php'; ?>
 </header>
 
 <body>
@@ -20,7 +20,7 @@
     <main class="trabajadores container">
         <?php
         // Establecer la conexión con la base de datos
-        $servername = "localhost";
+        $servername = "localhost:3307";
         $username = "root";
         $password = "";
         $dbname = "gamespotlight";

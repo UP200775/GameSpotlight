@@ -1,6 +1,6 @@
 <?php
 
-$servername = "localhost:3306";
+$servername = "localhost:3307";
 $username = "root";
 $password = "";
 $dbname = "gamespotlight";
@@ -41,7 +41,6 @@ if (isset($_GET["token"])) {
         //si inicio sesion aqui ponen su pagina web  eliminan la coneccion porq se encuetra arriba jajaja
         //pegan su pagina
         ?>
-
         
         Hola : <?php echo $username1 ?>
         <?php
