@@ -12,7 +12,7 @@
 </head>
 
 <header>
-<?php require_once'../Header/Header.html'; ?>
+<?php require_once'../Header/Header.php'; ?>
 </header>
 
 <body>
