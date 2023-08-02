@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<HTML lang="en">
+<html lang="en">
 
 <head>
-    <meta charset="UTF=-8">
-    <META name="viewport" content="width=device-width, initial-scale = 1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <title>Comunicate</title>
-    <link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Header/Header.css">
-    <link rel="stylesheet" href="../Footer/estilos.css">
-    <link rel="stylesheet" href="../Css/comunicate.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Comunicate</title>
+  <!-- Agrega los estilos de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../Header/Header.css">
+  <link rel="stylesheet" href="../Footer/estilos.css">
+  <link rel="stylesheet" href="../Css/comunicate.css">
 </head>
 
 <header>
-<?php include '../Header/Header.html'; ?>
+  <?php include '../Header/Header.php'; ?>
 </header>
+
 <body>
   <main class="container">
     <div class="row nosotros justify-content-center">
@@ -57,6 +59,10 @@
     </div>
   </main>
 
+  <!-- Agrega el script de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script>
     // Validación de formularios utilizando Bootstrap
@@ -82,7 +88,7 @@
 </body>
 
 <footer>
-  <?php require_once'../Footer/footer.html'; ?>
+  <?php require_once '../Footer/footer.html'; ?>
 </footer>
 
 </html>
