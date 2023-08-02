@@ -20,6 +20,7 @@
     <main class="trabajadores container">
         <?php
         // Establecer la conexión con la base de datos
+
         $servername = "localhost:3307";
         $username = "root";
         $password = "";
