@@ -85,7 +85,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 // Datos de conexión a la base de datos
-$servername = "localhost:3306";
+$servername = "localhost:3307";
         $username = "root";
         $password = "";
         $dbname = "gamespotlight";
