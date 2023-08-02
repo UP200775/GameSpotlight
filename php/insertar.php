@@ -40,7 +40,7 @@
 // Datos de conexión a la base de datos
 $servername = "localhost";
 $username = "root";
-$password = "lovemysql2023";
+$password = "";
 $dbname = "gamespotlight";
 
 // Crear conexión
